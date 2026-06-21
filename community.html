@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Community | Xavier Snow</title>
+<meta name="description" content="A decade of building communities in DC — Hustlepreneur, Black Affluence Media, and the partnerships behind them.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="index.html">XAVIER SNOW</a>
+  <ul>
+    <li><a class="nav-link" href="index.html">Home</a></li>
+    <li><a class="nav-link" href="the-app.html">The App</a></li>
+    <li><a class="nav-link active" href="community.html">Community</a></li>
+    <li><a class="nav-link" href="culture.html">Culture</a></li>
+    <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+    <li><a class="nav-link" href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page-hero">
+  <div class="page-eyebrow">Track record</div>
+  <h1>Before the app, there was the <em>room.</em></h1>
+  <p class="page-sub">ATCHÉ didn't start as a pitch deck. It started with a decade of building rooms, audiences, and partnerships across Washington, DC — the same instincts now built into infrastructure.</p>
+</div>
+
+<section class="reveal">
+  <div class="section-label">Hustlepreneur</div>
+  <h2 class="section-title">A monthly event series, running since 2017.</h2>
+  <div class="body-text">
+    <p>Hustlepreneur is a monthly event series I founded and have run continuously since 2017 — built around DC's entrepreneurs, creatives, and community builders. It's the longest-running proof that I can build a recurring audience and keep it coming back, year after year, without paid growth tricks.</p>
+    <p>Over that run, Hustlepreneur has built partnerships with institutions across DC's education, business, and community development landscape:</p>
+  </div>
+  <div class="card-grid">
+    <div class="card">
+      <span class="card-tag">Education</span>
+      <h3>Howard University</h3>
+      <p>Partnership ties into the HBCU network that's also the founding base for ATCHÉ's DC launch.</p>
+    </div>
+    <div class="card">
+      <span class="card-tag">Education</span>
+      <h3>KIPP DC</h3>
+      <p>Community and youth-facing partnership work across DC's KIPP school network.</p>
+    </div>
+    <div class="card">
+      <span class="card-tag">Business</span>
+      <h3>Keller Williams</h3>
+      <p>Real estate industry partnership, connecting Hustlepreneur's audience to DC's business community.</p>
+    </div>
+    <div class="card">
+      <span class="card-tag">Community development</span>
+      <h3>Marshall Heights CDO</h3>
+      <p>Partnership with a DC community development organization — civic and neighborhood-level credibility.</p>
+    </div>
+  </div>
+</section>
+
+<section class="reveal">
+  <div class="section-label">Black Affluence Media</div>
+  <h2 class="section-title">Built a 220,000-follower platform from nothing.</h2>
+  <div class="body-text">
+    <p>Black Affluence Media was a platform I built from the ground up, centered on Black excellence and affluence, growing it to 220,000 followers organically. It's direct proof of the same skill ATCHÉ depends on: building an audience that's real, engaged, and not bought.</p>
+  </div>
+  <div class="stats">
+    <div class="stat"><div class="stat-num">220K</div><div class="stat-label">Followers, built organically</div></div>
+    <div class="stat"><div class="stat-num">2017–</div><div class="stat-label">Hustlepreneur, monthly and ongoing</div></div>
+    <div class="stat"><div class="stat-num">4</div><div class="stat-label">Institutional partnerships, DC education &amp; business</div></div>
+    <div class="stat"><div class="stat-num">3</div><div class="stat-label">Years as a digital nomad, producing globally</div></div>
+  </div>
+</section>
+
+<section class="reveal">
+  <div class="section-label">Philosophy</div>
+  <h2 class="section-title">Community work and nonprofit outreach taught me the same lesson business school doesn't.</h2>
+  <div class="body-text">
+    <p>Alongside the events and media work, I've spent time as a community outreach worker for nonprofits and three years living as a digital nomad, producing content across different cities and cultures. Both pushed the same lesson: real community isn't an audience you broadcast to, it's a network you show up for — consistently, and for years, not quarters.</p>
+    <p>That's the standard ATCHÉ is held to. The Circle isn't a user base. It's a community Xavier and the ATCHÉ team are accountable to, the same way Hustlepreneur's audience has held me accountable since 2017.</p>
+  </div>
+  <div class="callout">
+    <p>"I didn't learn community building from a deck. I learned it from running the same event every month for years and watching who actually shows up."</p>
+    <div class="callout-attr">Xavier Snow</div>
+  </div>
+</section>
+
+<section class="reveal" style="padding-bottom:160px;">
+  <div class="section-label">Why this matters for you</div>
+  <h2 class="section-title">A partnership with me comes with the network already attached.</h2>
+  <div class="body-text">
+    <p>Whether the conversation is about event production, brand activation, or a deeper partnership around ATCHÉ, you're not starting from zero — you're plugging into a community and a set of institutional relationships that have been compounding since 2017.</p>
+  </div>
+  <div class="cta-row">
+    <a class="btn-outline" href="contact.html">Let's talk partnership</a>
+  </div>
+</section>
+
+<footer>
+  Xavier Snow — Washington, DC &nbsp;·&nbsp; <a href="contact.html">Get in touch</a>
+</footer>
+
+<script>
+const reveals = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15 });
+reveals.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>

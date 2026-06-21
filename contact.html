@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Xavier Snow</title>
+<meta name="description" content="Get in touch with Xavier Snow about ATCHÉ partnerships, brand contracts, or production bookings.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="index.html">XAVIER SNOW</a>
+  <ul>
+    <li><a class="nav-link" href="index.html">Home</a></li>
+    <li><a class="nav-link" href="the-app.html">The App</a></li>
+    <li><a class="nav-link" href="community.html">Community</a></li>
+    <li><a class="nav-link" href="culture.html">Culture</a></li>
+    <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+    <li><a class="nav-link active" href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page-hero">
+  <div class="page-eyebrow">Let's talk</div>
+  <h1>Have a room, a brand, or a partnership <em>worth building?</em></h1>
+  <p class="page-sub">Whether it's a production booking, a brand or venue partnership, or a deeper conversation about ATCHÉ — this is the fastest way to reach me directly.</p>
+</div>
+
+<section class="reveal">
+  <div class="section-label">Why this conversation is worth having</div>
+  <h2 class="section-title">Three things you're getting in one contract.</h2>
+  <div class="card-grid">
+    <div class="card">
+      <span class="card-tag">01</span>
+      <h3>Production that performs</h3>
+      <p>7+ years shooting and editing event, brand, and luxury content in DC — fast turnaround, consistent quality, proven across nightlife and high-ticket markets.</p>
+    </div>
+    <div class="card">
+      <span class="card-tag">02</span>
+      <h3>A network already built</h3>
+      <p>Hustlepreneur since 2017, a 220K-follower platform, and institutional partnerships across DC — your project plugs into an audience that already exists.</p>
+    </div>
+    <div class="card">
+      <span class="card-tag">03</span>
+      <h3>Infrastructure thinking</h3>
+      <p>ATCHÉ is built around certification, attribution, and fair pay — the same rigor I bring to scoping any partnership, not just a one-off shoot.</p>
+    </div>
+  </div>
+</section>
+
+<section class="reveal" style="padding-bottom:160px;">
+  <div class="section-label">Direct contact</div>
+  <h2 class="contact-title">Let's build something <em>worth documenting.</em></h2>
+  <div class="body-text">
+    <p>Email is the fastest way to start a real conversation — tell me a little about what you're working on (production, brand partnership, ATCHÉ, or something else) and I'll follow up quickly.</p>
+  </div>
+  <div class="cta-row">
+    <a class="btn-outline" href="mailto:xsnow1193@gmail.com?subject=Let%27s%20talk">Email me directly</a>
+  </div>
+  <div class="contact-links">
+    <a href="mailto:xsnow1193@gmail.com">xsnow1193@gmail.com</a>
+    <a href="tel:+12028264673">(202) 826-4673</a>
+    <a href="https://instagram.com/xavier_markus">@xavier_markus</a>
+    <a href="https://linkedin.com/in/xavier-snow">LinkedIn</a>
+    <a href="https://www.youtube.com/@xavier_markus">YouTube</a>
+    <a href="https://instagram.com/atcheofficial">@atcheofficial</a>
+  </div>
+</section>
+
+<footer>
+  Xavier Snow — Washington, DC
+</footer>
+
+<script>
+const reveals = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15 });
+reveals.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
