@@ -284,6 +284,15 @@ footer a:hover { color: var(--gold-light); }
 .about-layout { margin-top: 40px; display: grid; grid-template-columns: 320px 1fr; gap: 56px; align-items: start; }
 .about-portrait { border-radius: 4px; overflow: hidden; border: 1px solid var(--border); aspect-ratio: 9/16; }
 .about-portrait img { width: 100%; height: 100%; object-fit: cover; display: block; }
+/* Drops in only if images/xavier-profile.jpg is missing — a real portrait
+   belongs here; this just keeps the About section from showing a broken
+   image icon in the meantime. */
+.about-portrait-fallback {
+  width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;
+  background: linear-gradient(160deg, #151515, var(--black));
+  font-family: 'Playfair Display', serif; font-size: 64px; color: var(--gold);
+  letter-spacing: 2px;
+}
 @media (max-width: 760px) {
   .about-layout { grid-template-columns: 1fr; }
   .about-portrait { max-width: 320px; margin: 0 auto; }
